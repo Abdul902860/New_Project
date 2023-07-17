@@ -19,8 +19,8 @@ const db = mysql.createConnection({
 });
 
 app.post("/login",(req,res)=>{
-    const sql = "SELECT * FROM login WHERE email = ? AND password = ?";
-    // const values=[
+    const sql = "SELECT * FROM user  WHERE email = ? AND password = ?";
+    // const values=[ 
     //     req.body.username,
     //     req.body.password
     // ]
